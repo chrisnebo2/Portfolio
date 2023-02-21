@@ -28,14 +28,14 @@ function NavBar() {
     
   return (
     <div className="w-full bg-black fixed top-0">
-        <div className="w-full max-w-screen-xl mx-auto bg-black text-white px-4 md:px-6 h-20 flex items-center justify justify-between">
+        <div className="w-full max-w-screen-lg mx-auto bg-black text-white px-4 md:px-6 h-20 flex items-center justify justify-between">
             <div>
                 <h1 className="text-4xl md:text-5xl font-logo">Chris</h1>
             </div>
             <ul className="hidden md:flex">
                 {
                     myLinks.map(({link, id}) => (
-                        <li key={id} className="capitalize text-lg font-medium px-4 text-gray-400 hover:scale-105 duration-200 ease-out cursor-pointer hover:text-gray-200">{link}</li>
+                        <li key={id} className="capitalize text-base font-medium px-4 text-gray-400 hover:scale-105 duration-200 ease-out cursor-pointer hover:text-gray-200">{link}</li>
                     ))
                 }
             </ul>
