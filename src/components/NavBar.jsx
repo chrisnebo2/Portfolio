@@ -35,7 +35,7 @@ function NavBar() {
             <ul className="hidden md:flex">
                 {
                     myLinks.map(({link, id}) => (
-                        <li key={id} className="capitalize text-xl font-medium px-4 text-gray-400 hover:scale-105 duration-200 ease-out cursor-pointer hover:text-gray-200">{link}</li>
+                        <li key={id} className="capitalize text-lg font-medium px-4 text-gray-400 hover:scale-105 duration-200 ease-out cursor-pointer hover:text-gray-200">{link}</li>
                     ))
                 }
             </ul>
