@@ -35,7 +35,9 @@ function NavBar() {
             <ul className="hidden md:flex">
                 {
                     myLinks.map(({link, id}) => (
-                        <li key={id} className="capitalize font-medium ml-8 text-gray-400 hover:scale-105 duration-200 ease-out cursor-pointer hover:text-gray-200">{link}</li>
+                        <li key={id} className="capitalize font-medium ml-8 text-gray-400 hover:scale-105 duration-200 ease-out cursor-pointer hover:text-gray-200">
+                            <a href={`/${link}`}>{link}</a>
+                        </li>
                     ))
                 }
             </ul>
@@ -50,7 +52,9 @@ function NavBar() {
                 <ul className="md:hidden w-full h-screen bg-gradient-to-b from-black to-gray-600 absolute top-0 left-0 flex flex-col justify-center items-center">
                     {
                         myLinks.map(({link, id}) => (
-                            <li key={id} className="capitalize text-2xl py-2 text-gray-400 hover:scale-105 cursor-pointer hover:text-gray-200">{link}</li>
+                            <li key={id} className="capitalize text-2xl py-2 text-gray-400 hover:scale-105 cursor-pointer hover:text-gray-200">
+                                <a href={`/${link}`}>{link}</a>
+                            </li>
                         ))
                     }
                 </ul>
