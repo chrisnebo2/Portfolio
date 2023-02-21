@@ -48,7 +48,7 @@ function SocialLinks() {
         }, 
     ]
   return (
-    <div className="flex w-full xl:flex-col xl:top-[35%] xl:left-0 xl:fixed">
+    <div className="hidden w-full xl:flex-col xl:top-[35%] xl:left-0 xl:fixed">
         <ul>
             {
                 socials.map(({id, download, href, style, child}) => {
