@@ -48,15 +48,16 @@ function SocialLinks() {
         }, 
     ]
   return (
-    <div className="hidden w-full xl:flex-col xl:top-[35%] xl:left-0 xl:fixed">
+    <div className="hidden xl:flex flex-col top-[35%] left-0 fixed">
         <ul>
             {
                 socials.map(({id, download, href, style, child}) => {
                 return (
-                    <li key={id} className={`flex items-center xl:w-40 h-14 px-4 bg-gray-500 xl:ml-[-100px] xl:hover:ml-[-5px] xl:${style} xl:duration-300`}>
+                    <li key={id} className={`flex items-center w-40 h-14 px-4 bg-gray-500 ml-[-100px] hover:ml-[-5px] ${style} duration-300`}>
                         <a 
                             href={href} 
-                            download={download} 
+                            download={download}
+                            target="_blank" 
                             rel="noreferrer"
                             className="flex justify-between items-center w-full text-white"
                         >

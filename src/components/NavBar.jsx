@@ -15,11 +15,11 @@ function NavBar() {
         },
         {
             id: 3,
-            link: "experience"
+            link: "portfolio"
         },
         {
             id: 4,
-            link: "portfolio"
+            link: "experience"
         },
         {
             id: 5,
