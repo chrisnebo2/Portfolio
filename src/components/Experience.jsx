@@ -9,6 +9,8 @@ import css from "../assets/css.png"
 import reactRedux from "../assets/react-redux.png"
 import typeScript from "../assets/typescript.png"
 import reactRouter from "../assets/react-router.png"
+import nextJs from "../assets/nextjs.png"
+import nodeJs from "../assets/nodejs.png"
 
 
 function Experience() {
@@ -73,6 +75,18 @@ function Experience() {
             name: "Tailwind",
             color: "shadow-blue-500"
         },
+        {
+            id: 11,
+            img: nextJs,
+            name: "Next.Js",
+            color: "shadow-gray-300"
+        },
+        {
+            id: 12,
+            img: nodeJs,
+            name: "Node.js",
+            color: "shadow-green-500"
+        }
     ]
 
   return (
